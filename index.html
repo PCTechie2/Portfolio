@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Chauhan | Senior IT Executive Portfolio</title>
+    <style>
+        /* Modern Minimalist Dark-Tech Theme CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #cbd5e1;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 2px solid #1e293b;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        h1 {
+            color: #f8fafc;
+            font-size: 2.5rem;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            color: #38bdf8;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        .contact-info {
+            font-size: 0.95rem;
+            text-align: right;
+        }
+        .contact-info a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #f1f5f9;
+            font-size: 1.5rem;
+            border-left: 4px solid #38bdf8;
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #94a3b8;
+            font-size: 1.05rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-card {
+            background: #1e293b;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border: 1px solid #334155;
+            font-weight: 500;
+            color: #e2e8f0;
+            text-align: center;
+        }
+        .timeline {
+            position: relative;
+            border-left: 2px solid #334155;
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 5px;
+            background: #38bdf8;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .job-title {
+            color: #f8fafc;
+            font-weight: 700;
+            font-size: 1.15rem;
+        }
+        .company-date {
+            color: #38bdf8;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        .bullet-list {
+            margin-left: 20px;
+            color: #94a3b8;
+        }
+        .bullet-list li {
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 60px;
+        }
+        @media (max-width: 600px) {
+            .header-flex { display: block; }
+            .contact-info { text-align: left; margin-top: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-flex">
+            <div>
+                <h1>Parth Chauhan</h1>
+                <div class="subtitle">Senior IT Executive</div>
+            </div>
+            <div class="contact-info">
+                <p>Location: Ahmedabad, Gujarat</p>
+                <p>Email: <a href="mailto:pctechie2@gmail.com">pctechie2@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/parth-chauhan</a></p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Experienced Senior IT Executive with a strong track record in infrastructure management, network security, and robust system support. Expert in system monitoring, deployment, and security patching workflows. Adept at minimizing downtime and optimizing corporate network environments through proactive automation and advanced troubleshooting.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">Infrastructure Management</div>
+            <div class="skill-card">Network Administration</div>
+            <div class="skill-card">Sophos XG Firewall</div>
+            <div class="skill-card">Vulnerability Scanning</div>
+            <div class="skill-card">Cybersecurity Patching</div>
+            <div class="skill-card">PowerShell Scripting</div>
+            <div class="skill-card">System Monitoring Tools</div>
+            <div class="skill-card">Technical Support Engineering</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="job-title">Senior IT Executive</div>
+                <div class="company-date">XDUCE Technologies Pvt. Ltd. | Present</div>
+                <ul class="bullet-list">
+                    <li>Overseeing corporate IT infrastructure operations, system security administration, and network configuration.</li>
+                    <li>Managing server performance dashboards and implementing security compliance audits across configurations.</li>
+                    <li>Automating administrative workflows using PowerShell commands to maximize efficiency.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <div class="job-title">Desktop Support Engineer</div>
+                <div class="company-date">Information Technology Sector</div>
+                <ul class="bullet-list">
+                    <li>Provided comprehensive hardware, software, and localized network environment troubleshooting.</li>
+                    <li>Maintained active patch deployment schedules and cross-platform operating system installations.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Parth Chauhan. Built with clean code & passion.</p>
+    </footer>
+</div>
+
+</body>
+</html>
