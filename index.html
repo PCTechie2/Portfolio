@@ -165,8 +165,7 @@
 </nav>
 
 <div class="container">
-    <header>
-        <!-- Advanced Hero Section with Embedded Orbit Animation as requested in image_880e61.png -->
+    <!-- Advanced Perfectly Balanced Hero Section with Fixes from image_44533b.png -->
 <header style="padding-top: 50px; padding-bottom: 50px; border-bottom: 2px solid #1e293b; text-align: left;">
     <div class="header-flex" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 40px;">
         
@@ -188,79 +187,96 @@
 
             <div class="contact-info" style="font-size: 0.95rem; background: #1e293b; padding: 15px; border-radius: 8px; border: 1px solid #334155; max-width: 320px;">
                 <p style="margin-bottom: 5px; color: #94a3b8;"><strong>Location:</strong> Ahmedabad, Gujarat</p>
-                <p style="margin-bottom: 5px; color: #94a3b8;"><strong>Email:</strong> <a href="mailto:pctechie2@hotmail.com" style="color: #38bdf8; text-decoration: none;">pctechie2@hotmail.com</a></p>
-                <p style="margin-bottom: 0; color: #94a3b8;"><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank" style="color: #38bdf8; text-decoration: none;">www.linkedin.com/in/pctechie2
-</a></p>
+                <p style="margin-bottom: 5px; color: #94a3b8;"><strong>Email:</strong> <a href="mailto:pctechie2@gmail.com" style="color: #38bdf8; text-decoration: none;">pctechie2@gmail.com</a></p>
+                <p style="margin-bottom: 0; color: #94a3b8;"><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank" style="color: #38bdf8; text-decoration: none;">parth-chauhan</a></p>
             </div>
         </div>
 
-        <!-- Right Side: Rotating Skills Orbit System -->
+        <!-- Right Side: Rotating Skills Orbit System (Trigonometric Equal Spacing) -->
         <div style="flex: 1; min-width: 350px; display: flex; justify-content: center; align-items: center; padding: 40px 0;">
             <div style="position: relative; width: 360px; height: 360px; display: flex; justify-content: center; align-items: center;">
                 
-                <!-- Central Circular Avatar Wrapper -->
-                <div style="position: relative; width: 180px; height: 180px; border-radius: 50%; border: 3px solid #f97316; padding: 5px; background: #0f172a; z-index: 10; box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);">
-                    <!-- Gravatar fetches automatically here -->
-                    <img src="https://www.gravatar.com/pctechie2" id="hero-gravatar" alt="Parth Chauhan" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                <!-- Central Circular Avatar Wrapper (Fixed with standard stable image fallback) -->
+                <div style="position: relative; width: 180px; height: 180px; border-radius: 50%; border: 3px solid #f97316; padding: 5px; background: #0f172a; z-index: 10; box-shadow: 0 0 20px rgba(249, 115, 22, 0.3); overflow: hidden;">
+                    <!-- Directly using a highly available system placeholder avatar that always renders cleanly -->
+                    <img src="https://ui-avatars.com/api/?name=Parth+Chauhan&background=f97316&color=fff&size=180" alt="Parth Chauhan" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block;">
                     
                     <!-- 3+ Years Exp Badge -->
-                    <div style="position: absolute; bottom: -10px; right: -10px; background: #111827; border: 1px solid #f97316; color: #fff; padding: 4px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5); white-space: nowrap;">
+                    <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background: #111827; border: 1px solid #f97316; color: #fff; padding: 4px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5); white-space: nowrap; z-index: 12;">
                         <span style="color: #f97316;">3.5+</span> Years Exp.
                     </div>
                 </div>
 
-                <!-- Dotted Orbit Line -->
+                <!-- Dotted Orbit Line Backdrop -->
                 <div style="position: absolute; width: 280px; height: 280px; border: 1px dashed rgba(249, 115, 22, 0.25); border-radius: 50%;"></div>
 
-                <!-- CSS Orbit Continuous Rotation Ring -->
-                <div style="position: absolute; width: 100%; height: 100%; animation: spinOrbit 35s linear infinite;">
+                <!-- CSS Orbit Continuous Rotation Ring (The Wrapper Rotates) -->
+                <div class="main-orbit-ring" style="position: absolute; width: 100%; height: 100%; animation: spinOrbit 35s linear infinite;">
                     
-                    <!-- Tag 1: Office 365 -->
-                    <div style="position: absolute; top: 0px; left: 50%; transform: translateX(-50%); text-align: center; animation: counterSpin 35s linear infinite;">
-                        <div style="background: #111827; border: 1px solid #f97316; color: #f97316; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.4);">☁️</div>
-                        <div style="color: #fff; font-size: 0.7rem; font-weight: bold; margin-top: 4px; text-shadow: 0 2px 4px #000;">Office 365</div>
+                    <!-- All 8 tags spaced mathematically at exactly 45 degree intervals around the 140px radius orbit -->
+                    
+                    <!-- Tag 1: 0deg (Top) -->
+                    <div class="orbit-tag" style="position: absolute; top: 50%; left: 50%; margin: -30px; transform: rotate(0deg) translate(140px) rotate(0deg);">
+                        <div class="inner-tag-content">
+                            <div class="tag-icon">☁️</div>
+                            <div class="tag-text">Office 365</div>
+                        </div>
                     </div>
 
-                    <!-- Tag 2: Networking -->
-                    <div style="position: absolute; top: 40px; right: 25px; text-align: center; animation: counterSpin 35s linear infinite;">
-                        <div style="background: #111827; border: 1px solid #f97316; color: #f97316; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.4);">🖧</div>
-                        <div style="color: #fff; font-size: 0.7rem; font-weight: bold; margin-top: 4px; text-shadow: 0 2px 4px #000;">Networking</div>
+                    <!-- Tag 2: 45deg (Top Right) -->
+                    <div class="orbit-tag" style="position: absolute; top: 50%; left: 50%; margin: -30px; transform: rotate(45deg) translate(140px) rotate(-45deg);">
+                        <div class="inner-tag-content">
+                            <div class="tag-icon">🖧</div>
+                            <div class="tag-text">Networking</div>
+                        </div>
                     </div>
 
-                    <!-- Tag 3: AI -->
-                    <div style="position: absolute; top: 50%; right: -10px; transform: translateY(-50%); text-align: center; animation: counterSpin 35s linear infinite;">
-                        <div style="background: #111827; border: 1px solid #f97316; color: #f97316; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.4);">🧠</div>
-                        <div style="color: #fff; font-size: 0.7rem; font-weight: bold; margin-top: 4px; text-shadow: 0 2px 4px #000;">AI</div>
+                    <!-- Tag 3: 90deg (Right) -->
+                    <div class="orbit-tag" style="position: absolute; top: 50%; left: 50%; margin: -30px; transform: rotate(90deg) translate(140px) rotate(-90deg);">
+                        <div class="inner-tag-content">
+                            <div class="tag-icon">🧠</div>
+                            <div class="tag-text">AI</div>
+                        </div>
                     </div>
 
-                    <!-- Tag 4: Windows -->
-                    <div style="position: absolute; bottom: 40px; right: 25px; text-align: center; animation: counterSpin 35s linear infinite;">
-                        <div style="background: #111827; border: 1px solid #f97316; color: #f97316; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.4);">🪟</div>
-                        <div style="color: #fff; font-size: 0.7rem; font-weight: bold; margin-top: 4px; text-shadow: 0 2px 4px #000;">Windows</div>
+                    <!-- Tag 4: 135deg (Bottom Right) -->
+                    <div class="orbit-tag" style="position: absolute; top: 50%; left: 50%; margin: -30px; transform: rotate(135deg) translate(140px) rotate(-135deg);">
+                        <div class="inner-tag-content">
+                            <div class="tag-icon">🪟</div>
+                            <div class="tag-text">Windows</div>
+                        </div>
                     </div>
 
-                    <!-- Tag 5: Security -->
-                    <div style="position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%); text-align: center; animation: counterSpin 35s linear infinite;">
-                        <div style="background: #111827; border: 1px solid #f97316; color: #f97316; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.4);">🛡️</div>
-                        <div style="color: #fff; font-size: 0.7rem; font-weight: bold; margin-top: 4px; text-shadow: 0 2px 4px #000;">Security</div>
+                    <!-- Tag 5: 180deg (Bottom) -->
+                    <div class="orbit-tag" style="position: absolute; top: 50%; left: 50%; margin: -30px; transform: rotate(180deg) translate(140px) rotate(-180deg);">
+                        <div class="inner-tag-content">
+                            <div class="tag-icon">🛡️</div>
+                            <div class="tag-text">Security</div>
+                        </div>
                     </div>
 
-                    <!-- Tag 6: Hardware -->
-                    <div style="position: absolute; bottom: 40px; left: 25px; text-align: center; animation: counterSpin 35s linear infinite;">
-                        <div style="background: #111827; border: 1px solid #f97316; color: #f97316; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.4);">🔌</div>
-                        <div style="color: #fff; font-size: 0.7rem; font-weight: bold; margin-top: 4px; text-shadow: 0 2px 4px #000;">Hardware</div>
+                    <!-- Tag 6: 225deg (Bottom Left) -->
+                    <div class="orbit-tag" style="position: absolute; top: 50%; left: 50%; margin: -30px; transform: rotate(225deg) translate(140px) rotate(-225deg);">
+                        <div class="inner-tag-content">
+                            <div class="tag-icon">🔌</div>
+                            <div class="tag-text">Hardware</div>
+                        </div>
                     </div>
 
-                    <!-- Tag 7: Automation -->
-                    <div style="position: absolute; top: 50%; left: -10px; transform: translateY(-50%); text-align: center; animation: counterSpin 35s linear infinite;">
-                        <div style="background: #111827; border: 1px solid #f97316; color: #f97316; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.4);">⚡</div>
-                        <div style="color: #fff; font-size: 0.7rem; font-weight: bold; margin-top: 4px; text-shadow: 0 2px 4px #000;">Automation</div>
+                    <!-- Tag 7: 270deg (Left) -->
+                    <div class="orbit-tag" style="position: absolute; top: 50%; left: 50%; margin: -30px; transform: rotate(270deg) translate(140px) rotate(-270deg);">
+                        <div class="inner-tag-content">
+                            <div class="tag-icon">⚡</div>
+                            <div class="tag-text">Automation</div>
+                        </div>
                     </div>
 
-                    <!-- Tag 8: Inventory -->
-                    <div style="position: absolute; top: 40px; left: 25px; text-align: center; animation: counterSpin 35s linear infinite;">
-                        <div style="background: #111827; border: 1px solid #f97316; color: #f97316; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.4);">📋</div>
-                        <div style="color: #fff; font-size: 0.7rem; font-weight: bold; margin-top: 4px; text-shadow: 0 2px 4px #000;">Inventory</div>
+                    <!-- Tag 8: 315deg (Top Left) -->
+                    <div class="orbit-tag" style="position: absolute; top: 50%; left: 50%; margin: -30px; transform: rotate(315deg) translate(140px) rotate(-315deg);">
+                        <div class="inner-tag-content">
+                            <div class="tag-icon">📋</div>
+                            <div class="tag-text">Inventory</div>
+                        </div>
                     </div>
 
                 </div>
@@ -270,13 +286,40 @@
     </div>
 </header>
 
-<!-- CSS Keyframes Injection for Smooth Rotational Motion -->
+<!-- CSS Layout Injection for Exact Core Alignment and Synchronized Counter-Rotation -->
 <style>
+    .inner-tag-content {
+        text-align: center;
+        width: 60px;
+        animation: counterSpinAxis 35s linear infinite; /* Keeps text completely upright and stable while rotating */
+    }
+    .tag-icon {
+        background: #111827; 
+        border: 1px solid #f97316; 
+        color: #f97316; 
+        width: 38px; 
+        height: 38px; 
+        border-radius: 8px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        font-size: 1.1rem; 
+        margin: 0 auto; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    .tag-text {
+        color: #fff; 
+        font-size: 0.7rem; 
+        font-weight: bold; 
+        margin-top: 4px; 
+        text-shadow: 0 2px 4px #000;
+        white-space: nowrap;
+    }
     @keyframes spinOrbit {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
-    @keyframes counterSpin {
+    @keyframes counterSpinAxis {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(-360deg); }
     }
