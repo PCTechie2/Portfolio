@@ -165,23 +165,102 @@
 </nav>
 
 <div class="container">
-<!-- Clean Top Header (Without the box, as it moves to the bottom) -->
+
+    <!-- Fully Dynamic Hero Section with 1-by-1 Typing Animation from image_33e2bc.png -->
 <header style="padding-top: 50px; padding-bottom: 50px; border-bottom: 2px solid #1e293b; text-align: left;">
     <div style="max-width: 850px; margin: 0 auto; padding: 0 10px;">
-        <div style="color: #f97316; font-family: monospace; font-size: 1.1rem; font-weight: 700; margin-bottom: 5px;">&gt; Hello, I'm</div>
-        <h1 style="color: #f97316; font-size: 3.5rem; font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 15px;">Parth Chauhan</h1>
-        <div style="color: #f97316; font-size: 1.6rem; font-weight: 700; margin-bottom: 20px;">Senior IT Executive</div>
         
+        <!-- Welcome Text -->
+        <div style="color: #f97316; font-family: monospace; font-size: 1.1rem; font-weight: 700; margin-bottom: 5px;">&gt; Hello, I'm</div>
+        
+        <!-- Animated Name (1 by 1 wording layout) -->
+        <h1 style="min-height: 4rem;">
+            <span id="typing-name" style="color: #f97316; font-size: 3.5rem; font-weight: 800; line-height: 1.1; letter-spacing: -1px; font-family: 'Segoe UI', system-ui, sans-serif;"></span><span class="typing-cursor">|</span>
+        </h1>
+        
+        <!-- Animated Senior Role Title -->
+        <h2 style="min-height: 2.2rem; margin-bottom: 20px; margin-top: 10px;">
+            <span id="typing-role" style="color: #f97316; font-size: 1.6rem; font-weight: 700; font-family: 'Segoe UI', system-ui, sans-serif;"></span>
+        </h2>
+        
+        <!-- Core Work Categories Capsule Tags -->
         <div style="display: inline-block; border: 1px solid #334155; background: #111827; padding: 8px 20px; border-radius: 25px; margin-bottom: 25px;">
             <span style="color: #f8fafc; font-size: 0.95rem; font-weight: 600; letter-spacing: 0.5px;">
                 IT Operations <span style="color: #f97316; margin: 0 5px;">|</span> System Administration <span style="color: #f97316; margin: 0 5px;">|</span> Network & Security Management
             </span>
         </div>
         
+        <!-- Quote Tag Line -->
         <h3 style="color: #f8fafc; font-size: 1.6rem; font-weight: 700; line-height: 1.3; max-width: 700px; margin-top: 10px; letter-spacing: -0.5px;">
             "Ensuring Secure, Stable, and High-Availability IT Infrastructure"
         </h3>
     </div>
+</header>
+
+<!-- Styles for Blink Cursor and Layout Control -->
+<style>
+    .typing-cursor {
+        color: #f97316;
+        font-size: 3.2rem;
+        font-weight: 300;
+        animation: blink 0.7s infinite;
+        margin-left: 2px;
+        vertical-align: bottom;
+    }
+    @keyframes blink {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+</style>
+
+<!-- Light-weight Script to Handle the 1-by-1 Letter Typing Engine -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Enforce browser window to stay at the absolute top upon launch
+        window.scrollTo(0, 0);
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+
+        const nameText = "Parth Chauhan";
+        const roleText = "Senior IT Executive";
+        
+        const nameContainer = document.getElementById("typing-name");
+        const roleContainer = document.getElementById("typing-role");
+        const cursor = document.querySelector(".typing-cursor");
+
+        let nameIndex = 0;
+        let roleIndex = 0;
+
+        // Function to type name characters 1 by 1
+        function typeName() {
+            if (nameIndex < nameText.length) {
+                nameContainer.textContent += nameText.charAt(nameIndex);
+                nameIndex++;
+                setTimeout(typeName, 100); // speed control for name typing
+            } else {
+                // Once name finishes, trigger the role text typing sequence
+                setTimeout(typeRole, 400);
+            }
+        }
+
+        // Function to type role characters 1 by 1
+        function typeRole() {
+            if (roleIndex < roleText.length) {
+                roleContainer.textContent += roleText.charAt(roleIndex);
+                roleIndex++;
+                setTimeout(typeRole, 800); // slightly alternative speed pacing for role string
+            } else {
+                // Fade out cursor gently once all execution tracks finish
+                cursor.style.display = 'none';
+            }
+        }
+
+        // Launch the initial execution chain
+        setTimeout(typeName, 500);
+    });
+</script>
 </header>
 
     <section id="about">
@@ -419,7 +498,7 @@
         'skills': 'Navigating to Skills & Expertise...<br><span style="color: #94a3b8;">Displaying Advanced Competencies and Featured Tools Grid.</span>',
         'experience': 'Navigating to Professional Experience...<br><span style="color: #94a3b8;">Loading infrastructure, engineering, and support timeline logs.</span>',
         'certifications': 'Navigating to Certifications & Achievements...<br><span style="color: #94a3b8;">Displaying verified tech credentials and AI optimization tracks.</span>',
-        'contact': 'Navigating to Contact Section...<br><span style="color: #94a3b8;">Email: pctechie2@gmail.com | Ahmedabad, Gujarat.</span>',
+        'contact': 'Navigating to Contact Section...<br><span style="color: #94a3b8;">Email: pctechie2@hotmail.com | Ahmedabad, Gujarat.</span>',
         'clear': 'CLEAR_SCREEN'
     };
 
