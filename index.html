@@ -214,7 +214,7 @@
     }
 </style>
 
-<!-- Light-weight Script to Handle the 1-by-1 Letter Typing Engine -->
+<!-- Optimized High-Speed Typing Animation Engine -->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         // Enforce browser window to stay at the absolute top upon launch
@@ -233,32 +233,32 @@
         let nameIndex = 0;
         let roleIndex = 0;
 
-        // Function to type name characters 1 by 1
+        // Function to type name characters with high-speed pacing
         function typeName() {
             if (nameIndex < nameText.length) {
                 nameContainer.textContent += nameText.charAt(nameIndex);
                 nameIndex++;
-                setTimeout(typeName, 100); // speed control for name typing
+                setTimeout(typeName, 30); // Super fast speed (30ms per letter instead of 100ms)
             } else {
-                // Once name finishes, trigger the role text typing sequence
-                setTimeout(typeRole, 400);
+                // Instantly trigger role typing after name finishes
+                setTimeout(typeRole, 150);
             }
         }
 
-        // Function to type role characters 1 by 1
+        // Function to type role characters with high-speed pacing
         function typeRole() {
             if (roleIndex < roleText.length) {
                 roleContainer.textContent += roleText.charAt(roleIndex);
                 roleIndex++;
-                setTimeout(typeRole, 800); // slightly alternative speed pacing for role string
+                setTimeout(typeRole, 25); // Bullet speed for the subtitle title block
             } else {
-                // Fade out cursor gently once all execution tracks finish
-                cursor.style.display = 'none';
+                // Fade out cursor gently once typing execution track finishes
+                if(cursor) cursor.style.display = 'none';
             }
         }
 
-        // Launch the initial execution chain
-        setTimeout(typeName, 500);
+        // Launch the initial execution chain almost immediately
+        setTimeout(typeName, 200);
     });
 </script>
 </header>
